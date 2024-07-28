@@ -20,9 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeDragAndDropTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    DragAndDropBoxes(
+                        modifier = Modifier
+                            .padding(innerPadding)
                     )
                 }
             }
